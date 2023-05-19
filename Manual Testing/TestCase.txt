@@ -1,0 +1,14 @@
+TEST CASE 1 for TEST PLAN 1
+
+DESCRIPTION:
+When the user clicks "See All Bots" user will see a display of all the
+bots on the screen.
+
+STEPS:
+1: http://localhost:3000 on a browser using desktop
+2: Click "See All Bots"
+    a. User must be on the home page to see this
+3: Click the "Submit" button
+
+TEST POSTCONDITIONS:
+1: User should see all bots displayed on the screen.

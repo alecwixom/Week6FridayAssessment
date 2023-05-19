@@ -1,0 +1,20 @@
+BUG REPORT for TEST CASE 1
+
+May 19, 2023
+
+DESCRIPTION:
+See All Bots button does not work when clicked.
+
+STEPS TO REPRODUCE:
+1: Go to http://localhost:3000
+2: Click "See All Bots"
+
+EXPECTED RESULT:
+1: Display of all the bots should be on screen.
+
+ACTUAL RESULTS:
+1: When the "See All Bots" button is clicked, nothing happens.
+
+ENVIRONMENT:
+-Opera GX 98.0.4759.64
+-Chrome 113.0.5672.64

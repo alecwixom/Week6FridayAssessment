@@ -1,0 +1,29 @@
+TEST PLAN 1 for http://localhost:3000
+
+Overview:
+
+Test the functionality of the http://localhost:3000
+
+Links: http://localhost:3000
+
+Test Criteria:
+-When clicking "See All Bots" page should display all the bots
+
+-User must be on the home page
+
+- All buttons on the page work appropriately
+
+
+Entry Criteria
+-Access to decent internet connection speed above 10mbps
+
+-Access to a laptop or desktop
+
+-Access to a modern browser
+
+Exit Criteria
+-All test cases pass
+
+Other Details
+
+-Focus heavily on desktop browsers

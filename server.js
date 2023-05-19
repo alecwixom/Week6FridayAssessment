@@ -2,7 +2,16 @@ const express = require("express");
 const bots = require("./src/botsData");
 const shuffle = require("./src/shuffle");
 
+// include and initialize the rollbar library with your access token
+var Rollbar = require('rollbar')
+var rollbar = new Rollbar({
+  accessToken: 'facf60cbdfc54c22bc2c2a514525ee15',
+  captureUncaught: true,
+  captureUnhandledRejections: true,
+})
 
+// record a generic message and send it to Rollbar
+rollbar.log('Assessment rollbar')
 
 const playerRecord = {
   wins: 0,
@@ -46,6 +55,7 @@ app.get("/api/robots", (req, res) => {
     res.status(200).send(botsArr);
   } catch (error) {
     console.error("ERROR GETTING BOTS", error);
+    rollbar.info('Attacking!')
     res.sendStatus(400);
   }
 });
@@ -56,6 +66,7 @@ app.get("/api/robots/shuffled", (req, res) => {
     res.status(200).send(shuffled);
   } catch (error) {
     console.error("ERROR GETTING SHUFFLED BOTS", error);
+    rollbar.error('Having an error getting shuffled')
     res.sendStatus(400);
   }
 });
@@ -79,6 +90,7 @@ app.post("/api/duel", (req, res) => {
     }
   } catch (error) {
     console.log("ERROR DUELING", error);
+    rollbar.critical('CRITICAL DUEL ERROR')
     res.sendStatus(400);
   }
 });
@@ -88,6 +100,7 @@ app.get("/api/player", (req, res) => {
     res.status(200).send(playerRecord);
   } catch (error) {
     console.log("ERROR GETTING PLAYER STATS", error);
+    rollbar.warning('Eh this is just a warning on player stats')
     res.sendStatus(400);
   }
 });

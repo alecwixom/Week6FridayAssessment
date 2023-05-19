@@ -5,7 +5,7 @@ When the user clicks "See All Bots" user will see a display of all the
 bots on the screen.
 
 STEPS:
-1: http://localhost:3000 on a browser using desktop
+1: http://54.153.74.137:8000 on a browser using desktop
 2: Click "See All Bots"
     a. User must be on the home page to see this
 3: Click the "Submit" button

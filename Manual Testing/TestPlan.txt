@@ -1,10 +1,10 @@
-TEST PLAN 1 for http://localhost:3000
+TEST PLAN 1 for http://54.153.74.137:8000
 
 Overview:
 
-Test the functionality of the http://localhost:3000
+Test the functionality of the http://54.153.74.137:8000
 
-Links: http://localhost:3000
+Links: http://54.153.74.137:8000
 
 Test Criteria:
 -When clicking "See All Bots" page should display all the bots

@@ -6,7 +6,7 @@ DESCRIPTION:
 See All Bots button does not work when clicked.
 
 STEPS TO REPRODUCE:
-1: Go to http://localhost:3000
+1: Go to http://54.153.74.137:8000
 2: Click "See All Bots"
 
 EXPECTED RESULT:
